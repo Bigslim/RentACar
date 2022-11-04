@@ -44,7 +44,8 @@ public class Car implements CarInterface {
 
     @Override
     public void setMake(Make make) {
-    //To change body of generated methods, choose Tools | Templates.
+        this.setRate(rate);
+    //It sets the make (brand) of the car
         
     }
 
@@ -56,7 +57,8 @@ public class Car implements CarInterface {
 
     @Override
     public void setRate(double rate) {
-    //To change body of generated methods, choose Tools | Templates.
+        this.setRate(rate);
+    //Whatever it means, it SETS the rate of the car
     }
 
     @Override
@@ -67,7 +69,13 @@ public class Car implements CarInterface {
 
     @Override
     public void setAvailability(Map<Month, boolean[]> availability) {
-    //To change body of generated methods, choose Tools | Templates.
+        this.setAvailability(availability);
+    //It SETS the avaliability calendar for this car
+    
+    /**
+     * New variables can be declared in this structure.
+     * For the sake of consistency that would not happen at the moment.
+     */
     }
 
     @Override
