@@ -43,7 +43,7 @@ public class Driver {
 
         BookingSystemInterface bookingSystem = new BookingSystem();
 
-        String file = "amilcar_rentals.txt";
+        String file = "car_rentals.txt";
         BufferedReader in = new BufferedReader(new FileReader(file));
 
         RentACarInterface rentACar = bookingSystem.setupRentACar(in);

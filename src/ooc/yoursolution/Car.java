@@ -17,7 +17,8 @@ public class Car implements CarInterface {
     private Make make;
     private double rate;
     private boolean avaliability;
-    private int id;
+    private int iD;
+    private Map<Month, boolean[]> createAvailability;
     
     @Override
     public Map<Month, boolean[]> createAvailability() {
@@ -33,7 +34,7 @@ public class Car implements CarInterface {
 
     @Override
     public Make getMake() {
-         return this.make;
+         return make;
     // Will make the car model, overwritten from CarInterface.java 
     
     /**
@@ -44,32 +45,32 @@ public class Car implements CarInterface {
 
     @Override
     public void setMake(Make make) {
-        this.setRate(rate);
+        this.make = make;
     //It sets the make (brand) of the car
         
     }
 
     @Override
     public double getRate() {
-        return this.rate; 
+        return rate; 
     //It gets the rate of the car, whetever it means
     }
 
     @Override
     public void setRate(double rate) {
-        this.setRate(rate);
+        this.rate = rate;
     //Whatever it means, it SETS the rate of the car
     }
 
     @Override
     public Map<Month, boolean[]> getAvailability() {
-        return this.getAvailability();
+        return null;
     //Will return the avaliability calendar for this car
     }
 
     @Override
     public void setAvailability(Map<Month, boolean[]> availability) {
-        this.setAvailability(availability);
+        
     //It SETS the avaliability calendar for this car
     
     /**
@@ -80,25 +81,26 @@ public class Car implements CarInterface {
 
     @Override
     public int getId() {
-        return this.id; 
+        return iD; 
     //Will get the car ID
     }
 
     @Override
     public boolean isAvailable(Month month, int day) {
-        return this.isAvailable(month, day); 
+        return false; 
     //Will check the avaliability for a given month and day
         
     }
 
     @Override
     public boolean book(Month month, int day) {
-        return this.book(month, day); 
+        
+        return false; 
     //To book a room after avaliability is checked
     }
 
     private Map<Month, boolean[]> createAvailability(boolean avaliability) {
-        return this.createAvailability(avaliability); 
+        return createAvailability; 
     //It will create a calendar of days avaiable for a given car
     }
     
