@@ -19,8 +19,12 @@ import java.io.IOException;
 // INCLUDE HERE THE LINK TO THE GIT REPOSITORY AS A COMMENT!!!!
 
 
-// INCLUDE HERE THE FULL NAME AND STUDENT NUMBER OF BOTH TEAM MEMBERS 
-// AS A COMMENT!!!!
+/**
+ * Yuna Yang 2021297
+ * Diego Francisco 2021336
+ */
+
+
 
 
 

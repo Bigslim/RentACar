@@ -13,14 +13,10 @@ import java.io.IOException;
  * @author Diego
  */
 public class BookingSystem implements BookingSystemInterface {
-    
-    public BookingSystem(){
-    
-    }
-    
+
     @Override
     public RentACarInterface setupRentACar(BufferedReader in) throws IOException {
-        String; //To change body of generated methods, choose Tools | Templates.
-    }   
-    
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
 }
