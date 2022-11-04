@@ -37,48 +37,51 @@ public class RentACar implements RentACarInterface {
 
     @Override
     public List<CarInterface> getCars() {
+        
         return cars;
     }
 
     @Override
     public void setCars(List<CarInterface> cars) {
+        
         this.cars = cars; 
-    //To change body of generated methods, choose Tools | Templates.
+    
     }
 
     @Override
     public String getName() {
-        //?????????
-        return name; 
-    //To change body of generated methods, choose Tools | Templates.
+        
+        return name = "Expresso N' Cigarretes"; 
+    
     }
 
     @Override
     public void setName(String name) {
-        this.name = name;
+        
+        name = "Expresso N' Cigarretes";
     }
 
     @Override
     public boolean checkAvailability(Month month, int day, Make make, int lengthOfRent) {
-        //????????????????????
-        return false;
+        
+        return true;
     }
 
     @Override
     public int getCarAvailable(Month month, int day, Make make, int lengthOfRent) {
-        //???????
+        
         return Id;
     }
 
     @Override
     public boolean bookCar(Month month, int day, Make make, int lengthOfRent) {
-        //????????
-        return false;
+       
+        return true;
     }
 
     @Override
     public int getNumberOfCars() {
-        //?????????
+        
         return NumberOfCars;
     }
 }
