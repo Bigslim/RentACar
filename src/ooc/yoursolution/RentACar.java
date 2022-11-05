@@ -134,6 +134,7 @@ public class RentACar implements RentACarInterface {
     @Override
     public int getCarAvailable(Month month, int day, Make make, int lengthOfRent) {
         //Code has to be inserted here: check the FileReaderSampleSolution
+        
         return Id;
     }
 
