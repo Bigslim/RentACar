@@ -146,6 +146,8 @@ public class RentACar implements RentACarInterface {
 
     @Override
     public int getNumberOfCars() {
+   
+        
         //Code has to be inserted here: check the FileReaderSampleSolution
         return NumberOfCars;
     }
