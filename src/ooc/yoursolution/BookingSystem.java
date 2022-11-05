@@ -14,19 +14,39 @@ import java.io.IOException;
  */
 public class BookingSystem implements BookingSystemInterface {
 
+        
     @Override
     public RentACarInterface setupRentACar(BufferedReader in) throws IOException {
-        String line = in.readLine();
-        RentACarInterface rentACar = new RentACar();
+        String line = in.readLine(); // delcare string 
+        //String line1 = in.readLine();
+        /*
+        while((s = in.readLine()) != null){
+
+        String[] var = s.split(":");
+             //var[0]=MALE etc etc
+        addGender.add(var[0]);
+        */
         
-        while (line != null) {
+//        String make[] = line.split(":");
+//        for(String a : make){
+//            System.out.println(a);
+//        }
+        
+        
+        RentACarInterface rentACar = new RentACar();
+//        while ((line = in.readLine()) != null ) { // loops infinite if it is not 0
+//            String[] var = line.split(":");
+//        }
             
+        while (line != null) {
             System.out.println(line);
-             line = in.readLine();
+            line = in.readLine(); // read line by line until it finish
         }
+    
         return rentACar;
         
     }
-
     
 }
+
+    

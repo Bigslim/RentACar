@@ -29,7 +29,7 @@ public class Car implements CarInterface {
     }
 
     public boolean isAvaliability() {
-        return avaliability;
+        return true;
     }
 
     public void setAvaliability(boolean avaliability) {
@@ -107,6 +107,7 @@ public class Car implements CarInterface {
 
     @Override
     public int getId() {
+        this.Id = Id;
         return Id; 
     //Will get the car ID
     }

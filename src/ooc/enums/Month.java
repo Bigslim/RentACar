@@ -24,7 +24,7 @@ public enum Month {
     NOVEMBER(30),
     DECEMBER(31);
 
-    private final int numberOfDays;
+    public final int numberOfDays;
 
     Month(int numberOfDays) {
         this.numberOfDays = numberOfDays;
