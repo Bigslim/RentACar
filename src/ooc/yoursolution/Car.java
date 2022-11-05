@@ -17,8 +17,34 @@ public class Car implements CarInterface {
     private Make make;
     private double rate;
     private boolean avaliability;
-    private int iD;
+    private int Id;
     private Map<Month, boolean[]> createAvailability;
+
+    public Car(Make make, double rate, boolean avaliability, int Id, Map<Month, boolean[]> createAvailability) {
+        this.make = make;
+        this.rate = rate;
+        this.avaliability = avaliability;
+        this.Id = Id;
+        this.createAvailability = createAvailability;
+    }
+
+    public boolean isAvaliability() {
+        return avaliability;
+    }
+
+    public void setAvaliability(boolean avaliability) {
+        this.avaliability = avaliability;
+    }
+
+    public Map<Month, boolean[]> getCreateAvailability() {
+        return createAvailability;
+    }
+
+    public void setCreateAvailability(Map<Month, boolean[]> createAvailability) {
+        this.createAvailability = createAvailability;
+    }
+    
+    
     
     @Override
     public Map<Month, boolean[]> createAvailability() {
@@ -81,7 +107,7 @@ public class Car implements CarInterface {
 
     @Override
     public int getId() {
-        return iD; 
+        return Id; 
     //Will get the car ID
     }
 

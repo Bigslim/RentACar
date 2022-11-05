@@ -20,8 +20,9 @@ public class BookingSystem implements BookingSystemInterface {
         RentACarInterface rentACar = new RentACar();
         
         while (line != null) {
+            
             System.out.println(line);
-            line = in.readLine();
+             line = in.readLine();
         }
         return rentACar;
         

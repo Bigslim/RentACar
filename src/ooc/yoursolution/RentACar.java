@@ -16,20 +16,74 @@ import ooc.enums.Month;
  */
 public class RentACar implements RentACarInterface {
     
-    ArrayList<RentACar> Car;
+    ArrayList<CarInterface> Car;
     private List<CarInterface> cars;
+    private Make make;
+    private Month month;
     private String name;
     private int Id;
     private int NumberOfCars;
-
-    public RentACar(ArrayList<RentACar> Car, List<CarInterface> cars, String name, int Id, int NumberOfCars) {
+    private Iterable<CarInterface> carss;
+    
+    /*
+    Constructor of our attribute
+    */
+    
+    public RentACar(ArrayList<CarInterface> Car, List<CarInterface> cars, Make make, Month month, String name, int Id, int NumberOfCars, Iterable<CarInterface> carss) {
         this.Car = Car;
         this.cars = cars;
+        this.make = make;
+        this.month = month;
         this.name = name;
         this.Id = Id;
         this.NumberOfCars = NumberOfCars;
+        this.carss = carss;
     }
-      
+    
+    /*
+    Getters and setters of mehtods
+    */
+    
+    public ArrayList<CarInterface> getCar() {
+        return Car;
+    }
+
+    public void setCar(ArrayList<CarInterface> Car) {
+        this.Car = Car;
+    }
+
+    public Make getMake() {
+        return make;
+    }
+
+    public void setMake(Make make) {
+        this.make = make;
+    }
+
+    public Month getMonth() {
+        return month;
+    }
+
+    public void setMonth(Month month) {
+        this.month = month;
+    }
+
+    public int getId() {
+        return Id;
+    }
+
+    public void setId(int Id) {
+        this.Id = Id;
+    }
+
+    public Iterable<CarInterface> getCarss() {
+        return carss;
+    }
+
+    public void setCarss(Iterable<CarInterface> carss) {
+        this.carss = carss;
+    }
+    
     public RentACar(){
         Car = new ArrayList<>();
     
@@ -44,15 +98,19 @@ public class RentACar implements RentACarInterface {
     @Override
     public void setCars(List<CarInterface> cars) {
         
-        this.cars = cars; 
+        this.cars.add(Id, (CarInterface) cars);
     
     }
 
     @Override
     public String getName() {
         
-        return name = "Espresso N' Cigarretes"; 
-    
+        for (Make make : Make.values()){
+            System.out.println(make);
+            
+        }     
+    return name;
+        
     }
 
     @Override
@@ -67,6 +125,9 @@ public class RentACar implements RentACarInterface {
     @Override
     public boolean checkAvailability(Month month, int day, Make make, int lengthOfRent) {
         //COde has to be inserted here: check the FileReaderSampleSolution exercise
+        for (Month s : Month.values() ){
+            System.out.println(s);
+        }
         return false;
     }
 
