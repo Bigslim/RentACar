@@ -51,37 +51,40 @@ public class RentACar implements RentACarInterface {
     @Override
     public String getName() {
         
-        return name = "Expresso N' Cigarretes"; 
+        return name = "Espresso N' Cigarretes"; 
     
     }
 
     @Override
     public void setName(String name) {
-        
-        name = "Expresso N' Cigarretes";
+        // Following the teacher comments on RentACarInterface.java,
+        // the name of the Rent-a-Car company has been inserted here 
+        // but the console do not print it.
+        // It is printed only when changed above.
+        this.name = "Expresso N' Cigarretes";
     }
 
     @Override
     public boolean checkAvailability(Month month, int day, Make make, int lengthOfRent) {
-        
-        return true;
+        //COde has to be inserted here: check the FileReaderSampleSolution exercise
+        return false;
     }
 
     @Override
     public int getCarAvailable(Month month, int day, Make make, int lengthOfRent) {
-        
+        //Code has to be inserted here: check the FileReaderSampleSolution
         return Id;
     }
 
     @Override
     public boolean bookCar(Month month, int day, Make make, int lengthOfRent) {
-       
+        //Code has to be inserted here: check the FileReaderSampleSolution
         return true;
     }
 
     @Override
     public int getNumberOfCars() {
-        
+        //Code has to be inserted here: check the FileReaderSampleSolution
         return NumberOfCars;
     }
 }
