@@ -66,26 +66,29 @@ public class RentACar implements RentACarInterface {
 
     @Override
     public boolean checkAvailability(Month month, int day, Make make, int lengthOfRent) {
-        //COde has to be inserted here: check the FileReaderSampleSolution exercise
-        Month.values();
+        //Code has to be inserted here: check the FileReaderSampleSolution exercise
+        System.out.println(month + ":" + day + ":" + make + ":" + lengthOfRent);
         return false;
     }
 
     @Override
     public int getCarAvailable(Month month, int day, Make make, int lengthOfRent) {
         //Code has to be inserted here: check the FileReaderSampleSolution
+        System.out.println(month + ":" + day + ":" + make + ":" + lengthOfRent);
         return Id;
     }
 
     @Override
     public boolean bookCar(Month month, int day, Make make, int lengthOfRent) {
         //Code has to be inserted here: check the FileReaderSampleSolution
+        
         return true;
     }
 
     @Override
     public int getNumberOfCars() {
         //Code has to be inserted here: check the FileReaderSampleSolution
+        
         return NumberOfCars;
     }
 }
