@@ -67,6 +67,7 @@ public class RentACar implements RentACarInterface {
     @Override
     public boolean checkAvailability(Month month, int day, Make make, int lengthOfRent) {
         //Code has to be inserted here: check the FileReaderSampleSolution exercise
+        
         System.out.println(month + ":" + day + ":" + make + ":" + lengthOfRent);
         return false;
     }
