@@ -66,7 +66,7 @@ public class RentACar implements RentACarInterface {
 
     @Override
     public boolean checkAvailability(Month month, int day, Make make, int lengthOfRent) {
-        //Code has to be inserted here: check the FileReaderSampleSolution exercise
+        //Code has to be inserted here
         
         System.out.println(month + ":" + day + ":" + make + ":" + lengthOfRent);
         return false;
@@ -74,22 +74,26 @@ public class RentACar implements RentACarInterface {
 
     @Override
     public int getCarAvailable(Month month, int day, Make make, int lengthOfRent) {
-        //Code has to be inserted here: check the FileReaderSampleSolution
+        //Code has to be inserted here
         System.out.println(month + ":" + day + ":" + make + ":" + lengthOfRent);
         return Id;
     }
 
     @Override
     public boolean bookCar(Month month, int day, Make make, int lengthOfRent) {
-        //Code has to be inserted here: check the FileReaderSampleSolution
+        //Code has to be inserted here
         
         return true;
     }
 
     @Override
     public int getNumberOfCars() {
-        //Code has to be inserted here: check the FileReaderSampleSolution
+        //Code has to be inserted here
         
+        /**
+         * A loop is likely required here to pass through the car rentals file 
+         * and sum-up the number of cars avaliable in the service. 
+         */
         return NumberOfCars;
     }
 }
