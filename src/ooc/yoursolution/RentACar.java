@@ -19,14 +19,14 @@ public class RentACar implements RentACarInterface {
     ArrayList<RentACar> Car;
     private List<CarInterface> cars;
     private String name;
-    private int Id;
+    private int id;
     private int NumberOfCars;
 
     public RentACar(ArrayList<RentACar> Car, List<CarInterface> cars, String name, int Id, int NumberOfCars) {
         this.Car = Car;
         this.cars = cars;
         this.name = name;
-        this.Id = Id;
+        this.id = this.id;
         this.NumberOfCars = NumberOfCars;
     }
       
@@ -61,7 +61,7 @@ public class RentACar implements RentACarInterface {
         // the name of the Rent-a-Car company has been inserted here 
         // but the console do not print it.
         // It is printed only when changed above.
-        this.name = "Expresso N' Cigarretes";
+        this.name = "Espresso N' Cigarretes";
     }
 
     @Override
@@ -76,7 +76,7 @@ public class RentACar implements RentACarInterface {
     public int getCarAvailable(Month month, int day, Make make, int lengthOfRent) {
         //Code has to be inserted here
         System.out.println(month + ":" + day + ":" + make + ":" + lengthOfRent);
-        return Id;
+        return id;
     }
 
     @Override

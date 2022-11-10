@@ -17,7 +17,7 @@ public class Car implements CarInterface {
     private Make make;
     private double rate;
     private boolean avaliability;
-    private int iD;
+    private int Id;
     private Map<Month, boolean[]> createAvailability;
     
     @Override
@@ -81,8 +81,8 @@ public class Car implements CarInterface {
 
     @Override
     public int getId() {
-        return iD; 
-    //Will get the car ID
+        return Id; 
+    //Will get the car Id
     }
 
     @Override
